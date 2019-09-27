@@ -1,3 +1,4 @@
-# rez-python-setuptools
+rez-setuptools
+===
 
-Rez build configuration for python-setuptools.
+Rez build configuration for setuptools.

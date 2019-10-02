@@ -18,7 +18,14 @@ rez_set_archive(
 execute_process(
     COMMAND
     bash ${CMAKE_SOURCE_DIR}/install.sh ${SETUPTOOLS_URL}
+    RESULT_VARIABLE RETURN_CODE
 )
+
+# We check that the execute_process() macro terminated properly.
+# If not, we abort the process.
+if(RETURN_CODE EQUAL "1")
+    message(FATAL_ERROR "[CMAKE] Install script returned an error code. Aborting...")
+endif()
 
 # We use a bogus CMake "install" step in order to be able to properly finish
 # and get out of the CMake script.

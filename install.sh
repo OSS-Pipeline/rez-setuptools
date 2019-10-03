@@ -34,7 +34,11 @@ echo -e "[INSTALL] Installing Setuptools-${SETUPTOOLS_VERSION}..."
 echo -e "\n"
 
 # We call the pip command to install the Wheel file into our package.
-pip2 install ${SETUPTOOLS_URL} --target ${INSTALL_PATH} --upgrade --no-dependencies
+pip2 \
+    install ${SETUPTOOLS_URL} \
+    --target ${INSTALL_PATH} \
+    --upgrade \
+    --no-dependencies
 
 echo -e "\n"
 echo -e "[INSTALL] Finished installing Setuptools-${SETUPTOOLS_VERSION}!"

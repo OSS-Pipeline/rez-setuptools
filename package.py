@@ -13,6 +13,7 @@ description = \
 
 requires = [
     "cmake-3+",
+    "pip-19+",
     "python-2.7+"
 ]
 

@@ -1,6 +1,6 @@
 name = "setuptools"
 
-version = "41.2.0"
+version = "44.1.1"
 
 authors = [
     "Python Packaging Authority"

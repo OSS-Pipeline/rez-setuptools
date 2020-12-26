@@ -10,7 +10,7 @@ rez_set_archive(
     # we can build, using the following hierarchy:
     # "${REZ_REPO_PAYLOAD_DIR}/project_name/archive.what.ever"
     SETUPTOOLS_URL setuptools/setuptools-${REZ_BUILD_PROJECT_VERSION}-py2.py3-none-any.whl
-    https://files.pythonhosted.org/packages/b2/86/095d2f7829badc207c893dd4ac767e871f6cd547145df797ea26baea4e2e/setuptools-${REZ_BUILD_PROJECT_VERSION}-py2.py3-none-any.whl
+    https://files.pythonhosted.org/packages/e1/b7/182161210a13158cd3ccc41ee19aadef54496b74f2817cc147006ec932b4/setuptools-${REZ_BUILD_PROJECT_VERSION}-py2.py3-none-any.whl
 )
 
 # In the case of a Python pip wheel file, we do not have any archive to extract, so we can just execute our Bash
